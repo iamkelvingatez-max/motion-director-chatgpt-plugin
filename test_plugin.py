@@ -8,7 +8,7 @@ RDC_ID = "asdk_app_6a057d268ebc81919918d37eec718425"
 
 
 def test_marketplace_points_to_plugin():
-    market = json.loads((ROOT / "marketplace.json").read_text(encoding="utf-8"))
+    market = json.loads((ROOT / ".agents" / "plugins" / "marketplace.json").read_text(encoding="utf-8"))
     item = market["plugins"][0]
     assert market["name"] == "motion-director-plugins"
     assert item["name"] == "motion-director"
