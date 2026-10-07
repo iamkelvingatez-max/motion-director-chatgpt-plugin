@@ -1,0 +1,32 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "motion-director",
+  "version": "0.1.0",
+  "description": "Use ChatGPT image generation and local desktop control to prepare reference views and drive Motion Director and Blender.",
+  "author": {
+    "name": "Motion Director"
+  },
+  "keywords": [
+    "motion-director",
+    "blender",
+    "3d",
+    "animation",
+    "image-to-3d"
+  ],
+  "extensions": {
+    "com.openai": {
+      "apps": "./.app.json",
+      "interface": {
+        "displayName": "Motion Director",
+        "shortDescription": "Control Motion Director",
+        "longDescription": "Create missing reference views in ChatGPT, then use Remote Desktop Commander to control Motion Director and Blender on the user's authorized computer.",
+        "developerName": "Motion Director",
+        "category": "Productivity",
+        "capabilities": [
+          "Interactive"
+        ],
+        "defaultPrompt": "Help me turn a reference image into an editable 3D asset with Motion Director and Blender."
+      }
+    }
+  }
+}

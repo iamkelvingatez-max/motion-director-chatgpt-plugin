@@ -1,0 +1,20 @@
+{
+  "name": "motion-director-plugins",
+  "interface": {
+    "displayName": "Motion Director Plugins"
+  },
+  "plugins": [
+    {
+      "name": "motion-director",
+      "source": {
+        "source": "local",
+        "path": "./motion-director"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
