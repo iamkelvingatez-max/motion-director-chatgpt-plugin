@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parent
 PLUGIN = ROOT / "motion-director"
 RDC_KEY = "app-6a057d268ebc81919918d37eec718425"
 RDC_ID = "asdk_app_6a057d268ebc81919918d37eec718425"
